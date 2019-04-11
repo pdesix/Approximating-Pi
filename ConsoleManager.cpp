@@ -17,6 +17,8 @@ int ConsoleManager::show_menu(std::vector<std::string> algorithm_names) const
 	while(!std::cin.good() || option < 0)
 	{
 		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\nWybor: ";
+		std::cin.clear();
+		std::cin.ignore(123,static_cast<int>('\n'));
 		std::cin >> option;
 	}
 	return option;
@@ -30,6 +32,8 @@ int ConsoleManager::get_accuracy() const
 	while (!std::cin.good() || accuracy < 0)
 	{
 		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\nWybor: ";
+		std::cin.clear();
+		std::cin.ignore(123, static_cast<int>('\n'));
 		std::cin >> accuracy;
 	}
 	return accuracy;
