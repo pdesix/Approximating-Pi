@@ -32,3 +32,11 @@ ApproximationController & ApproximationController::get_approximation_controller(
 	static ApproximationController approximating_algorithm;
 	return approximating_algorithm;
 }
+
+std::vector<std::string> ApproximationController::get_names()
+{
+	std::vector<std::string> result;
+	for (ApproxAlgoPtr& ptr : algorithms)
+		result.push_back(ptr->get_name());
+	return result;
+}

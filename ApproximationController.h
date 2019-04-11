@@ -21,5 +21,6 @@ public:
 	
 	double approximate_pi(int accuracy_level, const ApproximatingAlgorithm& algorithm = ApproximatingAlgorithm::EulerFormula) const;
 	int implemented_algorithms_count() const;
+	std::vector<std::string> get_names();
 	static ApproximationController& get_approximation_controller();
 };

@@ -7,5 +7,6 @@ class FactorialApproximatingAlgorithm :
 	double double_factorial(int n) const;
 
 public:
+	inline virtual std::string get_name() const { return "Aproksymacja liczby pi za pomoca tozsamosci zwiazanej z silnia i podwojna silnia"; }
 	virtual double approximate_pi(int accuracy_level) const;
 };

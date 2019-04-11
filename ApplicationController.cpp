@@ -13,7 +13,7 @@ ApplicationController& ApplicationController::get_application_controller()
 
 void ApplicationController::run_app() const
 {
-	int option{ console.show_menu() };
+	int option{ console.show_menu(approximator.get_names()) };
 	while (option > 0)
 	{
 		const int n{ console.get_accuracy() };
@@ -24,6 +24,6 @@ void ApplicationController::run_app() const
 		}
 		const double result{ approximator.approximate_pi(n, static_cast<ApproximationController::ApproximatingAlgorithm>(option-1)) };
 		console.print_result(result);
-		option = console.show_menu();
+		option = console.show_menu(approximator.get_names());
 	}
 }

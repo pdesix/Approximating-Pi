@@ -6,17 +6,12 @@ ConsoleManager& ConsoleManager::get_console_manager()
 	return console_manager;
 }
 
-int ConsoleManager::show_menu() const
+int ConsoleManager::show_menu(std::vector<std::string> algorithm_names) const
 {
 	int option{ 0 };
 	std::cout << "0. Wyjscie z programu\n";
-	std::cout << "1. Aproksymacja liczby pi za pomoca sumy odwrotnosci kwadratow\n";
-	std::cout << "2. Aproksymacja liczby pi za pomoca identycznosci zwiazanej z silnia\n";
-	std::cout << "3. Aproksymacja liczby pi za pomoca metody Monte-Carlo\n";
-	std::cout << "4. Aproksymacja liczby pi za pomoca numerycznego obliczania calki z 4/(1+x^2) na przedziale [0,1]\n";
-	std::cout << "5. Aproksymacja liczby pi za pomoca wzoru Wallisa\n";
-	std::cout << "6. Aproksymacja liczby pi za pomoca wzoru Leibniza\n";
-	std::cout << "7. Aproksymacja liczby pi za pomoca calki z sqrt(1-x^2)\n";
+	for (int i = 1; i <= algorithm_names.size(); i++)
+		std::cout << i << ". " << algorithm_names[i-1] << "\n";
 	std::cout << "Wybor: ";
 	std::cin >> option;
 	while(!std::cin.good() || option < 0)
