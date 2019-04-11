@@ -23,4 +23,3 @@ public:
 	int implemented_algorithms_count() const;
 	static ApproximationController& get_approximation_controller();
 };
-

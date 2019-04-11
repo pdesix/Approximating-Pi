@@ -32,4 +32,3 @@ ApproximationController & ApproximationController::get_approximation_controller(
 	static ApproximationController approximating_algorithm;
 	return approximating_algorithm;
 }
-

@@ -18,4 +18,3 @@ public:
 	void print_error(const std::string & error_info) const;
 	void print_result(const double & result) const;
 };
-

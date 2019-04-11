@@ -6,4 +6,3 @@ class HalfCircleAreaIntegrationApproximatingAlgorithm :
 public:
 	virtual double approximate_pi(int accuracy_level) const;
 };
-

@@ -1,5 +1,6 @@
 #include "IntegrationApproximatingAlgorithm.h"
 #include "IntegralUtilities.h"
+#include <cmath>
 
 double IntegrationApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {

@@ -14,4 +14,3 @@ public:
 	static ApplicationController& get_application_controller();
 	void run_app() const;
 };
-
