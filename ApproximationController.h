@@ -3,24 +3,22 @@
 #include <memory>
 #include "IApproximatingAlgorithm.h"
 
+/**
+	Manager algorytmów aproksymuj¹cych, wywo³uje odpowiednie algorytmy szacuj¹ce wartoœæ liczby pi i zwraca wynik.
+	Klasa jest ca³kowicie niezale¿na od wyjœcia.
+*/
 class ApproximationController
 {
-	typedef std::unique_ptr<IApproximatingAlgorithm> ApproxAlgoPtr;
+	using ApproxAlgoPtr = std::unique_ptr<IApproximatingAlgorithm>;
 
-	std::vector<ApproxAlgoPtr> algorithms;
+	std::vector<ApproxAlgoPtr> algorithms; // Wektor zawieraj¹cy wskaŸniki na odpowiednie algorytmy
 	ApproximationController();
 	ApproximationController(ApproximationController&&) = delete;
 	ApproximationController(const ApproximationController&) = delete;
 
 public:
-	enum class ApproximatingAlgorithm
-	{
-		EulerFormula = 0,
-		FactorialIdentity = 1
-	};
-	
-	double approximate_pi(int accuracy_level, const ApproximatingAlgorithm& algorithm = ApproximatingAlgorithm::EulerFormula) const;
-	int implemented_algorithms_count() const;
-	std::vector<std::string> get_names();
-	static ApproximationController& get_approximation_controller();
+	double approximate_pi(int accuracy_level, int algorithm = 1) const;
+	int implemented_algorithms_count() const; // Funkcja zwracaj¹ca iloœæ aktualnie zaimplementowanych algorytmów, tj. rozmiar wektora algorithms
+	std::vector<std::string> get_names(); // Funkcja zwracaj¹ca nazwy wszystkich algorytmów, wykorzystywana do poprawnego wyœwietlania menu
+	static ApproximationController& get_approximation_controller(); // Implementacja wzorca projektowego singleton
 };

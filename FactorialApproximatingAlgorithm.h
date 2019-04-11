@@ -1,5 +1,8 @@
 #pragma once
 #include "IApproximatingAlgorithm.h"
+/**
+	Klasa realizuj¹ca wyznaczanie liczby pi poprzez to¿samoœæ: \pi ~ \sum_{n=0}^{\infty} \frac{n!}{(2n+1)!!}
+*/
 class FactorialApproximatingAlgorithm :
 	public IApproximatingAlgorithm
 {

@@ -1,5 +1,9 @@
 #pragma once
 #include "IApproximatingAlgorithm.h"
+
+/**
+	Klasa wykorzystuj¹ca wzór Wallisa do oszacowania wartoœci liczby pi.
+*/
 class WallisProductApproximatingAlgorithm :
 	public IApproximatingAlgorithm
 {

@@ -1,6 +1,9 @@
 #pragma once
 #include "IApproximatingAlgorithm.h"
 
+/**
+	Klasa wyznaczaj¹ca wartoœæ liczby pi za pomoc¹ wzoru Leibniza: \sum_{n=0}^{\infty} \frac{(-1)^n}{2n+1}
+*/
 class LeibnizFormulaApproximatingAlgorithm
 	: public IApproximatingAlgorithm
 {
