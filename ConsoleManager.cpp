@@ -19,9 +19,10 @@ int ConsoleManager::show_menu() const
 	std::cout << "7. Aproksymacja liczby pi za pomoca calki z sqrt(1-x^2)\n";
 	std::cout << "Wybor: ";
 	std::cin >> option;
-	if (!std::cin.good())
+	while(!std::cin.good() || option < 0)
 	{
-		throw std::exception("Zly wybor - wprowadzono cos innego niz liczba calkowita");
+		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\n";
+		std::cin >> option;
 	}
 	return option;
 }
