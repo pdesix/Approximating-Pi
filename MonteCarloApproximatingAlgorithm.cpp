@@ -1,6 +1,6 @@
 #include "MonteCarloApproximatingAlgorithm.h"
 
-double MonteCarloApproximatingAlgorithm::approximate_pi(const int & accuracy_level) const
+double MonteCarloApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {
 	std::default_random_engine random_engine;
 	std::uniform_real_distribution<double> distribution;

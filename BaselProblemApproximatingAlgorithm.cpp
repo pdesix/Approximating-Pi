@@ -1,6 +1,6 @@
 #include "BaselProblemApproximatingAlgorithm.h"
 
-double BaselProblemApproximatingAlgorithm::approximate_pi(const int & accuracy_level) const
+double BaselProblemApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {
 	double sum{ 0.0 };
 	for (int i{ 1 }; i <= accuracy_level; i++)

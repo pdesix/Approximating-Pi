@@ -115,6 +115,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ApplicationController.cpp" />
+    <ClCompile Include="ApproximationController.cpp" />
+    <ClCompile Include="BaselProblemApproximatingAlgorithm.cpp" />
+    <ClCompile Include="ConsoleManager.cpp" />
+    <ClCompile Include="FactorialApproximatingAlgorithm.cpp" />
+    <ClCompile Include="HalfCircleAreaIntegrationApproximatingAlgorithm.cpp" />
+    <ClCompile Include="IntegrationApproximatingAlgorithm.cpp" />
+    <ClCompile Include="LeibnizFormulaApproximatingAlgorithm.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MonteCarloApproximatingAlgorithm.cpp" />
+    <ClCompile Include="WallisProductApproximatingAlgorithm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationController.h" />
+    <ClInclude Include="ApproximationController.h" />
+    <ClInclude Include="BaselProblemApproximatingAlgorithm.h" />
+    <ClInclude Include="ConsoleManager.h" />
+    <ClInclude Include="FactorialApproximatingAlgorithm.h" />
+    <ClInclude Include="HalfCircleAreaIntegrationApproximatingAlgorithm.h" />
+    <ClInclude Include="IApproximatingAlgorithm.h" />
+    <ClInclude Include="IntegralUtilities.h" />
+    <ClInclude Include="IntegrationApproximatingAlgorithm.h" />
+    <ClInclude Include="LeibnizFormulaApproximatingAlgorithm.h" />
+    <ClInclude Include="MonteCarloApproximatingAlgorithm.h" />
+    <ClInclude Include="WallisProductApproximatingAlgorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

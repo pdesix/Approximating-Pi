@@ -13,5 +13,84 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Approximating Algorithms">
+      <UniqueIdentifier>{0b1b4203-6a82-4935-8979-2fd9544f8c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Approximating Algorithms\Implementations">
+      <UniqueIdentifier>{d0476da4-9c02-488a-aba8-32eb7066e6c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationController.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ApproximationController.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleManager.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="WallisProductApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="MonteCarloApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="LeibnizFormulaApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegrationApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="HalfCircleAreaIntegrationApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="FactorialApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+    <ClCompile Include="BaselProblemApproximatingAlgorithm.cpp">
+      <Filter>Approximating Algorithms\Implementations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationController.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="ApproximationController.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleManager.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegralUtilities.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="BaselProblemApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="FactorialApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="HalfCircleAreaIntegrationApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegrationApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="LeibnizFormulaApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="MonteCarloApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="WallisProductApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="IApproximatingAlgorithm.h">
+      <Filter>Approximating Algorithms</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

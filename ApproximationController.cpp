@@ -18,7 +18,7 @@ ApproximationController::ApproximationController()
 	algorithms.emplace_back(new HalfCircleAreaIntegrationApproximatingAlgorithm());
 }
 
-double ApproximationController::approximate_pi(const int & accuracy_level, const ApproximationController::ApproximatingAlgorithm&algorithm) const
+double ApproximationController::approximate_pi(int accuracy_level, const ApproximationController::ApproximatingAlgorithm&algorithm) const
 {
 	return (*algorithms[static_cast<int>(algorithm)])(accuracy_level);
 }

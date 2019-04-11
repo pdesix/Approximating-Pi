@@ -1,7 +1,7 @@
 #include "LeibnizFormulaApproximatingAlgorithm.h"
 #include <cmath>
 
-double LeibnizFormulaApproximatingAlgorithm::approximate_pi(const int & accuracy_level) const
+double LeibnizFormulaApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {
 	double sum{ 0.0 };
 	for (int i{ 0 }; i < accuracy_level; i++)

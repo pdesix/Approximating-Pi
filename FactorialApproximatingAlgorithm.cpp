@@ -1,6 +1,6 @@
 #include "FactorialApproximatingAlgorithm.h"
 
-double FactorialApproximatingAlgorithm::factorial(const int & n) const
+double FactorialApproximatingAlgorithm::factorial(int n) const
 {
 	double result{ 1.0 };
 	for (int i = 2; i <= n; i ++)
@@ -10,7 +10,7 @@ double FactorialApproximatingAlgorithm::factorial(const int & n) const
 	return result;
 }
 
-double FactorialApproximatingAlgorithm::double_factorial(const int & n) const
+double FactorialApproximatingAlgorithm::double_factorial(int n) const
 {
 	double result{ 1.0 };
 	for (int i = (n % 2 == 0 ? 2 : 1); i <= n; i+=2)
@@ -20,7 +20,7 @@ double FactorialApproximatingAlgorithm::double_factorial(const int & n) const
 	return result;
 }
 
-double FactorialApproximatingAlgorithm::approximate_pi(const int & accuracy_level) const
+double FactorialApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {
 	double sum{ 0.0 };
 	for(int i{ 0 }; i < accuracy_level; i++)
