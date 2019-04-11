@@ -16,7 +16,7 @@ int ConsoleManager::show_menu(std::vector<std::string> algorithm_names) const
 	std::cin >> option;
 	while(!std::cin.good() || option < 0)
 	{
-		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\n";
+		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\nWybor: ";
 		std::cin >> option;
 	}
 	return option;
@@ -27,13 +27,10 @@ int ConsoleManager::get_accuracy() const
 	int accuracy;
 	std::cout << "Wprowadz liczbe calkowita - stopien dokladnosci obliczen: ";
 	std::cin >> accuracy;
-	if (!std::cin.good())
+	while (!std::cin.good() || accuracy < 0)
 	{
-		throw std::exception("Zly wybor - wprowadzono cos innego niz liczba calkowita");
-	}
-	if (accuracy < 0)
-	{
-		throw std::exception("Zly wybor - stopien dokladnosci obliczen ustalono na mniejszy od zera");
+		std::cout << "Cos poszlo nie tak... Prawdopodobnie wprowadziles niepoprawna wartosc. Sprobuj ponownie.\nWybor: ";
+		std::cin >> accuracy;
 	}
 	return accuracy;
 }
