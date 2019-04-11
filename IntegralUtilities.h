@@ -12,6 +12,7 @@ public:
 		for (int i{ 0 }; i < accuracy_level; i++)
 		{
 			sum += dx * static_cast<double>(f(x));
+			x += dx;
 		}
 		return sum;
 	}
