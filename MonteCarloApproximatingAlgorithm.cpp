@@ -14,5 +14,5 @@ double MonteCarloApproximatingAlgorithm::approximate_pi(int accuracy_level) cons
 		if (x*x + y * y <= 1)
 			points_in_circle++;
 	}
-	return 4 * points_in_circle;
+	return 4.0 * points_in_circle / (accuracy_level * 150.0);
 }
