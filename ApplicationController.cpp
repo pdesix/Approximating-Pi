@@ -19,11 +19,11 @@ void ApplicationController::run_app() const
 		const int n{ console.get_accuracy() };
 		if (option > approximator.implemented_algorithms_count())
 		{
-			console.print_error("Niepoprawny wybor");
+			console.show_error("Niepoprawny wybor");
 			return;
 		}
-		const double result{ approximator.approximate_pi(n, static_cast<ApproximationController::ApproximatingAlgorithm>(option-1)) };
-		console.print_result(result);
+		const double result{ approximator.approximate_pi(n, option-1) };
+		console.update_result(result);
 		option = console.show_menu(approximator.get_names());
 	}
 }

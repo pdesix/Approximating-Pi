@@ -39,7 +39,7 @@ int ConsoleManager::get_accuracy() const
 	return accuracy;
 }
 
-void ConsoleManager::print_error(const std::string & error_info) const
+void ConsoleManager::show_error(const std::string & error_info) const
 {
 	using namespace std::chrono_literals;
 	std::cout << "Wystapil blad!\nSzczegolowe informacje: " << error_info << "\n\nProgram zostanie za chwile zamkniety\n";
@@ -47,7 +47,7 @@ void ConsoleManager::print_error(const std::string & error_info) const
 
 }
 
-void ConsoleManager::print_result(const double & result) const
+void ConsoleManager::update_result(double result) const
 {
 	using namespace std::chrono_literals;
 	std::cout << "Wynik obliczen: " << result << "\n";

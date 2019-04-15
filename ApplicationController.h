@@ -11,8 +11,8 @@ class ApplicationController
 	ApplicationController(ApplicationController&&) = delete;
 	ApplicationController(const ApplicationController&) = delete;
 
-	ConsoleManager& console; // Manager wyjœcia
-	ApproximationController& approximator; // Manager algorytmów aproksymuj¹cych
+	ConsoleManager& console; // Obiekt klasy zarz¹dzaj¹cej konsol¹ (wyjœciem)
+	ApproximationController& approximator; // Obiekt klasy dysponuj¹cej zbiorem algorytmów przybli¿aj¹cych liczbê pi
 public:
 	static ApplicationController& get_application_controller();
 	void run_app() const; // Metoda kontroluj¹ca przebieg programu
