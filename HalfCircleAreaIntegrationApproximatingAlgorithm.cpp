@@ -1,5 +1,6 @@
 #include "HalfCircleAreaIntegrationApproximatingAlgorithm.h"
 #include "IntegralUtilities.h"
+#include <cmath>
 
 double HalfCircleAreaIntegrationApproximatingAlgorithm::approximate_pi(int accuracy_level) const
 {
